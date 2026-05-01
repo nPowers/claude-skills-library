@@ -1,0 +1,19 @@
+# Pipeline tracking database — stays local, never committed
+weekly-pipeline/seen_skills.db
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.env
+.venv/
+venv/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
