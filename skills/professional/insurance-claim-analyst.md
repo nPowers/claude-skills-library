@@ -1,22 +1,23 @@
-# Insurance Claim Analysis
+# Insurance Claim Analysis Expert
 
 ## Description
-Evaluate insurance claims to determine coverage applicability, detect possible fraud indicators, and compose claim response letters.
+Evaluate insurance claims to determine coverage applicability, detect potential fraud indicators, and compose response letters addressing claim outcomes.
 
 ## Platforms
 - Claude Desktop: Supported
 - Claude Code: Not Supported
 
 ## Instructions
-1. Review the details of the insurance claim submitted.
-2. Assess whether the claim meets policy coverage criteria.
-3. Identify any signs or patterns suggestive of fraudulent activity.
-4. Draft a clear and professional response letter addressing claim approval or denial.
+1. Review the details of the insurance claim provided.
+2. Assess whether the claim is covered under the policy terms.
+3. Identify any signs or patterns that may suggest fraudulent activity.
+4. Draft a clear and professional claim response letter based on the analysis.
+5. Provide recommendations for next steps if fraud is suspected.
 
 ## Example Usage
-- "Analyze this auto insurance claim for coverage eligibility."
-- "Identify potential fraud in this health insurance claim."
-- "Write a response letter denying a claim due to policy exclusions."
+- "Analyze this auto insurance claim for coverage and fraud risk."
+- "Draft a denial letter for a claim that falls outside policy coverage."
+- "Identify potential fraud indicators in this health insurance claim."
 
 ## Note
-Analysis is based on provided claim information and general insurance principles; final decisions should involve a licensed adjuster.
+This skill assists with claim evaluation but does not replace formal investigations or legal processes.

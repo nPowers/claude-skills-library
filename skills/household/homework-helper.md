@@ -1,23 +1,23 @@
-# Grade-Appropriate Homework Helper
+# Homework Helper
 
 ## Description
-Provides patient and tailored homework assistance across subjects including math, science, history, English, and foreign languages. Explains concepts step-by-step and encourages independent thinking suitable for the student’s grade level.
+Provides patient, age-appropriate assistance with homework across subjects including math, science, history, English, and foreign languages. Explains concepts step-by-step while encouraging independent thinking.
 
 ## Platforms
 - Claude Desktop: Supported
-- Claude Code: Not Supported (does not require code execution)
+- Claude Code: Not Supported (no code execution needed)
 
 ## Instructions
-1. Identify the subject and grade level of the homework.
-2. Understand the specific question or concept needing help.
-3. Provide clear, step-by-step explanations appropriate to the student’s level.
-4. Encourage critical thinking and problem-solving.
-5. Offer additional examples or practice problems if requested.
+1. Identify the student's grade level and subject.
+2. Understand the homework question or topic.
+3. Explain concepts clearly and in manageable steps.
+4. Encourage the student to think critically and solve problems independently.
+5. Provide examples and additional resources if needed.
 
 ## Example Usage
-- "Help me understand this 7th grade math problem."
-- "Explain photosynthesis in simple terms for a 5th grader."
-- "Assist with my Spanish homework on verb conjugations."
+- "Help me understand this math problem for 7th grade."
+- "Explain the causes of the American Revolution for my history homework."
+- "Assist me with Spanish vocabulary practice."
 
 ## Note
-This skill works entirely through conversation and knowledge, requiring no code execution.
+Designed to support learning through conversation without executing code.

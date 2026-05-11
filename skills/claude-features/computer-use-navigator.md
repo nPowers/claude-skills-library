@@ -1,23 +1,22 @@
-# Computer Use Navigator
+# Desktop and Browser Task Automator
 
 ## Description
-Automates desktop and browser tasks leveraging Claude's computer use capabilities. Supports workflows such as form filling, data extraction, UI testing, and repetitive desktop operations to improve productivity.
+Automate common desktop and browser workflows using Claude's computer interaction capabilities. Ideal for tasks such as form filling, data extraction, UI testing, and repetitive desktop operations.
 
 ## Platforms
 - Claude Desktop: Supported
-- Claude Code: Not Supported (requires interactive desktop automation features)
+- Claude Code: Not Supported (requires desktop interaction capabilities)
 
 ## Instructions
-1. Enable computer use capabilities in Claude Desktop.
-2. Define the desktop or browser tasks to automate (e.g., form filling).
-3. Guide Claude to perform UI interactions step-by-step.
-4. Extract or input data as required during automation.
-5. Repeat or schedule workflows for repetitive tasks.
+1. Identify the desktop or browser task to automate.
+2. Use Claude to simulate user interactions like clicking, typing, and navigation.
+3. Extract or input data as needed to complete the workflow.
+4. Repeat or chain tasks to automate complex sequences.
 
 ## Example Usage
-- "Automate filling web forms"
-- "Extract data from desktop applications"
-- "Perform UI testing on software"
+- "Automate filling out this online form."
+- "Extract data from this webpage table."
+- "Test the UI flow for this desktop application."
 
 ## Note
-This skill depends on Claude Desktop's interactive computer use features and is not available in Claude Code.
+This skill requires access to desktop or browser automation features and is not available in Claude Code.
