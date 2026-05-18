@@ -1,23 +1,23 @@
-# Memory Toolkit for Claude Code
+# Memory Toolkit Session Memory Plugin
 
 ## Description
-Memory Toolkit is a session memory lifecycle plugin for Claude Code that manages structured markdown memory, workstreams, handoff processes, and auto-save hooks. It helps maintain organized and persistent memory across agent sessions.
+Memory Toolkit is a session memory lifecycle plugin for Claude Code that enables structured markdown memory management. It supports workstreams, handoff between sessions, and auto-save hooks to maintain persistent and organized memory across interactions.
 
 ## Platforms
-- Claude Desktop: Not Supported (requires code execution and session management hooks)
-- Claude Code: Supported
+- Claude Desktop: Not Supported
+- Claude Code: Supported (requires session memory management and code hooks)
 
 ## Instructions
-1. Integrate Memory Toolkit into your Claude Code environment.
-2. Use structured markdown to define and store session memory.
-3. Manage multiple workstreams and enable smooth handoff between them.
+1. Integrate Memory Toolkit into your Claude Code project.
+2. Use structured markdown to store session memory.
+3. Manage workstreams and enable handoff between sessions.
 4. Configure auto-save hooks to persist memory automatically.
-5. Leverage the toolkit to maintain continuity across agent interactions.
+5. Retrieve and update memory as needed during agent workflows.
 
 ## Example Usage
-- "Initialize structured memory for current session"
-- "Switch between workstreams seamlessly"
-- "Enable auto-save for memory persistence"
+- "Enable session memory with Memory Toolkit"
+- "Save workstream state automatically"
+- "Handoff session memory between agents"
 
 ## Note
-This plugin is intended for Claude Code due to its reliance on lifecycle hooks and session state management.
+Memory Toolkit relies on Claude Code features for memory lifecycle management and is not available on Claude Desktop.

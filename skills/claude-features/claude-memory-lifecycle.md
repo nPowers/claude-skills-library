@@ -1,23 +1,23 @@
 # Connection-Based Memory Lifecycle
 
 ## Description
-This skill manages memory entries in Claude Code by tracking their connections. Entries linked to other knowledge persist, while isolated entries gradually fade. It is implemented entirely using lifecycle hooks to maintain relevant memory efficiently.
+Manages memory entries in Claude Code by maintaining those connected to other knowledge while allowing isolated entries to fade. Implements a lifecycle entirely through hooks to optimize memory relevance.
 
 ## Platforms
 - Claude Desktop: Not Supported
-- Claude Code: Supported (relies on lifecycle hooks exclusive to Claude Code)
+- Claude Code: Supported (relies on lifecycle hooks for memory management)
 
 ## Instructions
 1. Activate the memory lifecycle hooks within Claude Code.
-2. Monitor memory entries for connections to other knowledge.
-3. Retain entries that have active connections.
-4. Gradually remove or fade isolated entries without connections.
-5. Continuously update memory state based on connection changes.
+2. Monitor memory entries and identify connections between them.
+3. Retain entries linked to other knowledge nodes.
+4. Allow isolated or unconnected entries to fade over time.
+5. Use this lifecycle to keep memory focused and relevant.
 
 ## Example Usage
-- "Manage memory lifecycle for connected knowledge"
-- "Retain linked memory entries and fade isolated ones"
-- "Apply connection-based memory pruning"
+- "Enable connection-based memory lifecycle"
+- "Manage memory entries with lifecycle hooks"
+- "Optimize Claude Code memory retention"
 
 ## Note
-This skill requires Claude Code environment due to its dependence on lifecycle hooks and is not available on Claude Desktop.
+This skill requires Claude Code environment due to its dependency on lifecycle hooks and connection tracking.

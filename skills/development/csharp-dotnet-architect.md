@@ -1,22 +1,22 @@
-# C# and .NET 8/9 Architecture Specialist
+# C# .NET Architecture Specialist
 
 ## Description
-Provides expert knowledge on C# and .NET versions 8 and 9, including LINQ, Entity Framework Core, Dependency Injection, Minimal APIs, Blazor, and Clean Architecture principles.
+Expert guidance on C# and .NET 8/9 development, including LINQ, Entity Framework Core, Dependency Injection, Minimal APIs, Blazor, and Clean Architecture design patterns.
 
 ## Platforms
 - Claude Desktop: Supported
 - Claude Code: Supported
 
 ## Instructions
-1. Explain advanced C# language features and .NET runtime capabilities.
-2. Assist with designing and implementing clean architecture patterns.
-3. Provide code examples for LINQ queries, EF Core usage, and DI setup.
-4. Guide on building Minimal APIs and Blazor applications.
+1. Provide detailed explanations of C# language features and .NET 8/9 frameworks.
+2. Assist with code examples for LINQ queries, EF Core data access, and DI setup.
+3. Explain Minimal APIs and Blazor component development.
+4. Advise on applying Clean Architecture principles in .NET projects.
 
 ## Example Usage
 - "How do I implement dependency injection in .NET 8?"
-- "Show me a Blazor component example"
-- "Explain Clean Architecture in C# projects"
+- "Show a Blazor component example"
+- "Explain Clean Architecture with C#"
 
 ## Note
-This skill offers design and coding advice but does not run or test .NET code.
+Covers modern .NET versions and architectural best practices.

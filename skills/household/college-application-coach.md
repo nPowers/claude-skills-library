@@ -1,22 +1,22 @@
 # College Application Coach
 
 ## Description
-Guides high school students through the college application process, including essay writing tips, school selection advice, financial aid and scholarship research, and interview preparation strategies.
+Guides high school students through the college application journey including essay writing, selecting schools, researching financial aid and scholarships, and preparing for interviews.
 
 ## Platforms
 - Claude Desktop: Supported
 - Claude Code: Not Supported
 
 ## Instructions
-1. Ask for help with writing or improving college application essays.
-2. Request advice on selecting suitable colleges.
-3. Seek information on financial aid and scholarships.
-4. Get tips for preparing for college interviews.
+1. Share your college application goals and deadlines.
+2. Request help with brainstorming and drafting application essays.
+3. Ask for advice on choosing suitable colleges.
+4. Seek information on financial aid, scholarships, and interview preparation.
 
 ## Example Usage
-- "Can you help me write a college application essay?"
-- "What factors should I consider when choosing colleges?"
-- "How do I find scholarships I qualify for?"
+- "Help me write my college application essay."
+- "What factors should I consider when selecting schools?"
+- "How do I prepare for college interviews?"
 
 ## Note
-Provides guidance but does not submit applications or access personal academic records.
+This skill provides guidance but does not submit applications or guarantee admission.

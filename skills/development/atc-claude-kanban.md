@@ -1,22 +1,21 @@
-# Real-Time Kanban Dashboard for Claude Code Agents
+# Claude Kanban Dashboard
 
 ## Description
-Provides a live Kanban board to monitor Claude Code agent tasks, sessions, and subagents. Use this skill to visualize and track agent workflows through a browser interface in real time.
+A real-time Kanban board for monitoring Claude Code agent tasks, sessions, and subagents through a browser interface. Use this skill to visualize and manage ongoing agent workflows effectively.
 
 ## Platforms
-- Claude Desktop: Not Supported (requires browser-based UI and backend integration)
-- Claude Code: Supported (requires code execution environment to run dashboard server)
+- Claude Desktop: Not Supported
+- Claude Code: Supported (requires browser-based UI and agent integration)
 
 ## Instructions
-1. Launch the Kanban dashboard server within the Claude Code environment.
-2. Connect the dashboard to active Claude Code agents and subagents.
-3. Continuously update the board with real-time task and session data.
-4. Use the browser interface to monitor and manage agent workflows visually.
+1. Activate the skill within Claude Code environment.
+2. Open the provided browser interface to view the Kanban dashboard.
+3. Monitor and interact with agent tasks, sessions, and subagents in real-time.
 
 ## Example Usage
-- "Show me the current Kanban board for Claude Code agents"
-- "Display active tasks and sessions on the dashboard"
-- "Update the Kanban view with latest agent statuses"
+- "Show me the current Claude agent Kanban board"
+- "Open the real-time task dashboard"
+- "Display active subagents on the Kanban board"
 
 ## Note
-This skill requires running a backend service and a browser interface, so it is only available in Claude Code environments with network access.
+Requires Claude Code environment with web UI support; not available on Claude Desktop.

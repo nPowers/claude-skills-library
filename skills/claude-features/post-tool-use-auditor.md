@@ -1,23 +1,23 @@
 # Post-Tool Use Auditor
 
 ## Description
-Captures and logs the results of all tool executions to create detailed audit trails. Generates structured JSON logs per session to support debugging, compliance, and reporting requirements.
+Captures and logs the results of all tool executions after completion. Generates structured JSON audit logs per session to support debugging, compliance, and traceability.
 
 ## Platforms
 - Claude Desktop: Not Supported
-- Claude Code: Supported (uses lifecycle hooks for post-tool execution capture)
+- Claude Code: Supported (uses lifecycle hooks for post-tool execution logging)
 
 ## Instructions
-1. Activate the post-tool use auditor hook in Claude Code.
-2. After each tool execution, capture the output and metadata.
+1. Enable the post-tool use auditor hook in Claude Code.
+2. After each tool completes, capture its output and metadata.
 3. Format the captured data into structured JSON audit logs.
-4. Store or transmit logs for compliance and debugging.
-5. Provide summaries or reports based on logged data as needed.
+4. Store or transmit logs for compliance and debugging purposes.
+5. Review logs to monitor tool usage and results.
 
 ## Example Usage
-- "Log tool results after execution"
-- "Generate JSON audit trails for tool use"
-- "Capture tool outputs for compliance"
+- "Start post-tool use auditing"
+- "Log all tool results after execution"
+- "Generate JSON audit trails for tool sessions"
 
 ## Note
-This skill requires Claude Code environment due to its dependency on lifecycle hooks for capturing tool results.
+Requires Claude Code environment due to dependency on lifecycle hooks.

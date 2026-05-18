@@ -1,24 +1,23 @@
-# Quick Question Game-Dev Control Plane
+# Quick Question Game-Dev Agent Control Plane
 
 ## Description
-Quick Question is a control plane for game development agents that closes the loop with verified compile, testing, and cross-model review across Unity, Godot, Unreal, and S&box. It features lifecycle-aware /qq:go routing and 26 /qq:* slash commands. Designed primarily for Claude Code, it supports agent-agnostic operation via HTTP and MCP.
+Quick Question is a control plane designed for game development agents. It closes the loop with verified compile, test, and cross-model review across popular engines like Unity, Godot, Unreal, and S&box. It features lifecycle-aware routing via /qq:go, 26 slash commands under /qq:*, and supports Claude Code-first workflows with agent-agnostic integration through HTTP and MCP.
 
 ## Platforms
-- Claude Desktop: Not Supported (requires lifecycle routing and agent orchestration features)
-- Claude Code: Supported
+- Claude Desktop: Not Supported
+- Claude Code: Supported (requires code execution and multi-agent integration)
 
 ## Instructions
-1. Activate Quick Question within Claude Code.
-2. Use /qq:go routing to manage lifecycle-aware task flows.
-3. Employ the 26 /qq:* slash commands for various game-dev operations.
-4. Integrate with Unity, Godot, Unreal, and S&box pipelines.
-5. Utilize HTTP and MCP protocols for agent-agnostic communication.
-6. Verify compile and test results to close the development loop.
+1. Deploy Quick Question in your Claude Code environment.
+2. Use /qq:go for lifecycle-aware routing of game-dev tasks.
+3. Utilize the 26 /qq:* slash commands to manage compile, test, and review processes.
+4. Integrate with game engines via HTTP or MCP protocols.
+5. Coordinate cross-model reviews and verification loops.
 
 ## Example Usage
-- "/qq:go start compile and test cycle"
-- "/qq:review cross-model game assets"
-- "/qq:deploy to Unreal environment"
+- "/qq:go start build verification"
+- "Run cross-model review with Quick Question"
+- "Compile and test Unity project using /qq commands"
 
 ## Note
-Quick Question requires Claude Code due to its reliance on lifecycle routing and multi-agent orchestration. It is not supported on Claude Desktop.
+Quick Question requires Claude Code due to its reliance on code execution, HTTP integrations, and multi-agent orchestration. It is not supported on Claude Desktop.

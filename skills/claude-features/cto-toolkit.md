@@ -1,23 +1,22 @@
 # CTO Toolkit for Engineering Leadership
 
 ## Description
-A comprehensive Claude Code plugin designed for engineering leaders. It includes 54 specialized skills, 5 autonomous agents, 9 automation scripts, and intelligent hooks that support the entire software engineering lifecycle.
+A comprehensive Claude Code plugin offering 54 specialized skills, 5 autonomous agents, 9 automation scripts, and intelligent hooks. Designed to support engineering leaders throughout the full software development lifecycle.
 
 ## Platforms
-- Claude Desktop: Not Supported
-- Claude Code: Supported (requires code execution and automation scripts)
+- Claude Desktop: Not Supported (requires code execution and automation scripts)
+- Claude Code: Supported
 
 ## Instructions
-1. Install the CTO Toolkit plugin into your Claude Code environment.
-2. Access the suite of skills, agents, and scripts tailored for engineering management.
-3. Use the autonomous agents to automate routine engineering tasks.
-4. Leverage intelligent hooks to integrate with your development workflows.
-5. Customize and extend the toolkit as needed for your team’s processes.
+1. Integrate the CTO Toolkit plugin into your Claude Code setup.
+2. Access the suite of skills and autonomous agents tailored for engineering leadership.
+3. Utilize automation scripts to streamline development workflows.
+4. Configure intelligent hooks to monitor and assist across project stages.
 
 ## Example Usage
-- "Activate CTO Toolkit for project management"
-- "Run engineering lifecycle automation"
-- "Use autonomous agent to review code quality"
+- "Launch CTO Toolkit dashboard"
+- "Run autonomous agent for sprint planning"
+- "Execute automation script for code review"
 
 ## Note
-This toolkit requires Claude Code due to its reliance on automation scripts and autonomous agents. It is not available on Claude Desktop.
+This toolkit depends on code execution and automation features only available in Claude Code.

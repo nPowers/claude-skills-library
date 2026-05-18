@@ -8,15 +8,15 @@ Assists in managing complex family calendars by coordinating school events, spor
 - Claude Code: Not Supported
 
 ## Instructions
-1. Provide details of family members' schedules and commitments.
+1. Provide details of family members' schedules including events and commitments.
 2. Request identification of any conflicts or overlaps.
 3. Ask for suggestions to resolve scheduling issues.
-4. Request a consolidated summary or shared calendar overview.
+4. Generate a consolidated family calendar overview.
 
 ## Example Usage
 - "Help me coordinate my kids' sports and school events."
 - "Are there any conflicts in our family calendar next week?"
-- "Create a shared schedule summary for all appointments."
+- "Create a shared schedule summary for the month."
 
 ## Note
-Does not integrate directly with calendar apps; relies on user-provided schedule data.
+This skill helps organize schedules but does not integrate directly with calendar apps.

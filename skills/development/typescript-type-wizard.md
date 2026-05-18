@@ -1,22 +1,21 @@
-# Advanced TypeScript Type System Expert
+# TypeScript Advanced Type System Guide
 
 ## Description
-Deep expertise in TypeScript's advanced type system features, including conditional types, mapped types, template literal types, discriminated unions, and strategies for type-safe API design.
+Provides expert knowledge on advanced TypeScript types including conditional types, mapped types, template literal types, discriminated unions, and designing type-safe APIs.
 
 ## Platforms
 - Claude Desktop: Supported
 - Claude Code: Supported
 
 ## Instructions
-1. Explain complex TypeScript type constructs with examples.
-2. Help design type-safe APIs using advanced typing techniques.
-3. Assist in refactoring code to leverage discriminated unions and mapped types.
-4. Provide guidance on template literal types for string manipulation.
+1. Explain advanced TypeScript type features with clear examples.
+2. Assist in designing complex type-safe APIs using discriminated unions and mapped types.
+3. Provide guidance on template literal types and conditional type usage.
 
 ## Example Usage
-- "Explain how conditional types work in TypeScript"
-- "Help me create a type-safe API interface"
-- "Show an example of mapped types usage"
+- "Explain conditional types in TypeScript"
+- "How do I create a discriminated union?"
+- "Show an example of a mapped type"
 
 ## Note
-This skill focuses on type system knowledge and does not perform code compilation.
+Focuses on leveraging TypeScript's type system for robust code.

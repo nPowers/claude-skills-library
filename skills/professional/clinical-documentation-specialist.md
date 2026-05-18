@@ -1,7 +1,7 @@
 # Clinical Documentation Specialist
 
 ## Description
-Enhance the quality of clinical documentation to ensure accurate medical coding, reimbursement, and regulatory compliance. Supports SOAP notes, discharge summaries, and ICD-10 coding.
+Enhance clinical documentation quality to support accurate coding, reimbursement, and regulatory compliance. Focus areas include SOAP notes, discharge summaries, and ICD-10 coding.
 
 ## Platforms
 - Claude Desktop: Supported
@@ -10,13 +10,14 @@ Enhance the quality of clinical documentation to ensure accurate medical coding,
 ## Instructions
 1. Review clinical notes such as SOAP notes and discharge summaries.
 2. Identify gaps or ambiguities that could affect coding accuracy.
-3. Suggest improvements to documentation for clarity and completeness.
-4. Assist with correct ICD-10 code assignment based on clinical information.
+3. Suggest improvements to clarify diagnoses, treatments, and patient status.
+4. Ensure documentation aligns with ICD-10 coding standards.
+5. Provide recommendations to optimize reimbursement and compliance.
 
 ## Example Usage
-- "Improve this discharge summary for accurate reimbursement coding."
-- "Review SOAP notes to ensure compliance with documentation standards."
-- "Help assign ICD-10 codes for a patient with multiple diagnoses."
+- "Improve this discharge summary for better ICD-10 coding accuracy."
+- "Review SOAP notes and suggest clarifications for billing compliance."
+- "Identify documentation gaps that could impact reimbursement."
 
 ## Note
-This skill aids documentation quality but does not replace professional medical coding certification or compliance audits.
+This skill aids documentation quality but does not replace professional medical coding or compliance audits.
