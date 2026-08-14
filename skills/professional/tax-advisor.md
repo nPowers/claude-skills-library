@@ -20,4 +20,4 @@ Offer tax planning advice for individuals and businesses, covering deductions, c
 - "Advise on tax treaty benefits for a US citizen working abroad."
 
 ## Note
-This skill provides general tax guidance and should not substitute personalized advice from a certified tax professional.
+This skill provides general tax guidance and should not substitute for personalized advice from a certified tax professional.
