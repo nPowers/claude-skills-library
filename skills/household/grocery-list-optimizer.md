@@ -1,23 +1,22 @@
 # Grocery List Optimizer
 
 ## Description
-Enhances grocery shopping efficiency by organizing lists by store sections, identifying available sales and coupons, recommending store-brand alternatives, and suggesting ways to reduce food waste.
+Helps organize grocery shopping by categorizing items by store section, identifying available sales and coupons, recommending store-brand alternatives, and suggesting ways to reduce food waste.
 
 ## Platforms
 - Claude Desktop: Supported
 - Claude Code: Not Supported
 
 ## Instructions
-1. Collect the user's grocery items and preferred stores.
-2. Organize the list according to store layout or sections.
-3. Identify current sales, coupons, or discounts applicable.
-4. Suggest cost-effective store-brand substitutions.
-5. Provide tips to minimize food waste based on the list.
+1. Provide your grocery list or items you need.
+2. Ask to organize the list by store layout or sections.
+3. Request suggestions for sales, coupons, or cheaper substitutions.
+4. Get tips on minimizing food waste with your planned purchases.
 
 ## Example Usage
-- "Organize my grocery list for the local supermarket."
-- "Are there any coupons available for these items?"
-- "Suggest cheaper alternatives to brand-name products."
+- "Organize my grocery list by store section."
+- "Are there any coupons or deals for these items?"
+- "Suggest store-brand alternatives to save money."
 
 ## Note
-Availability of sales and coupons may vary by location and time.
+This skill optimizes planning but does not access real-time store inventories or prices.

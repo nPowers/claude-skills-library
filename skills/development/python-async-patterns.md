@@ -1,17 +1,16 @@
-# Python Asyncio Patterns Expert
+# Python Async Programming Expert
 
 ## Description
-Provides expert guidance on Python asynchronous programming using asyncio, async/await syntax, task groups, and concurrency patterns. Includes support for FastAPI async endpoints, aiohttp, and async database drivers in Python 3.11+.
+Provides expertise in Python 3.11+ asynchronous programming including asyncio, async/await syntax, task groups, and concurrency patterns. Covers async FastAPI endpoints, aiohttp usage, and async database drivers.
 
 ## Platforms
 - Claude Desktop: Supported
 - Claude Code: Supported
 
 ## Instructions
-1. Ask about Python async programming concepts or best practices.
-2. Request code examples for asyncio, task groups, or async web frameworks.
-3. Inquire about integrating async database drivers or handling concurrency.
-4. Receive detailed explanations, code snippets, and usage recommendations.
+1. When asked about Python async programming, explain concepts like asyncio event loop, async/await, and task groups.
+2. Provide code examples for async FastAPI endpoints and aiohttp client/server usage.
+3. Advise on best practices for using async database drivers and concurrency patterns.
 
 ## Example Usage
 - "Explain how to use asyncio task groups in Python 3.11"
@@ -19,4 +18,4 @@ Provides expert guidance on Python asynchronous programming using asyncio, async
 - "How do I use aiohttp for asynchronous HTTP requests?"
 
 ## Note
-Focuses on Python 3.11+ features and common async libraries; does not execute code.
+Focuses on Python 3.11+ async features and common async libraries.

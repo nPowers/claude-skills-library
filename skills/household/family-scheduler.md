@@ -1,23 +1,22 @@
 # Family Scheduler
 
 ## Description
-Helps coordinate complex family calendars by managing school events, sports, appointments, and work commitments. Detects scheduling conflicts, proposes solutions, and generates shared calendar summaries.
+Assists in managing complex family calendars by coordinating school events, sports, appointments, and work commitments. Detects scheduling conflicts, proposes solutions, and generates shared calendar summaries.
 
 ## Platforms
 - Claude Desktop: Supported
 - Claude Code: Not Supported
 
 ## Instructions
-1. Collect all relevant family members' schedules and commitments.
-2. Identify any overlapping or conflicting events.
-3. Suggest adjustments or alternatives to resolve conflicts.
-4. Create a consolidated, easy-to-understand shared calendar overview.
-5. Update schedules as new events arise.
+1. Provide details of family members' schedules including events and commitments.
+2. Request identification of any conflicts or overlaps.
+3. Ask for suggestions to resolve scheduling issues.
+4. Generate a consolidated family calendar overview.
 
 ## Example Usage
 - "Help me coordinate my kids' sports and school events."
 - "Are there any conflicts in our family calendar next week?"
-- "Generate a summary of all appointments for this month."
+- "Create a shared schedule summary for the month."
 
 ## Note
-Does not integrate directly with external calendar apps; manual input is required.
+This skill helps organize schedules but does not integrate directly with calendar apps.

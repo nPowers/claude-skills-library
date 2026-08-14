@@ -1,22 +1,22 @@
-# Claude Code Project Memory Plugin
+# Claude Code Automatic Project Memory
 
 ## Description
-Provides automatic, per-project cognitive memory within Claude Code. Features hybrid search capabilities, session lifecycle hooks, and local embedding storage to enhance contextual understanding and recall.
+Provides Claude Code with fully automatic, per-project cognitive memory featuring hybrid search, session lifecycle hooks, and local embeddings. Use this to maintain contextual awareness and recall across coding sessions.
 
 ## Platforms
-- Claude Desktop: Not Supported
-- Claude Code: Supported (relies on session lifecycle hooks and local embeddings)
+- Claude Desktop: Not Supported (requires code execution and local embedding storage)
+- Claude Code: Supported
 
 ## Instructions
-1. Enable the memory plugin in your Claude Code project.
-2. Allow the plugin to capture session data automatically.
-3. Use hybrid search to retrieve relevant past information.
-4. Leverage local embeddings to improve context-aware responses.
+1. Install the plugin into your Claude Code environment.
+2. Enable session lifecycle hooks to capture context automatically.
+3. Use hybrid search to retrieve relevant memory during coding.
+4. Leverage local embeddings to enhance memory recall.
 
 ## Example Usage
-- "Recall previous project decisions"
+- "Enable project memory for this coding session"
+- "Recall previous session context"
 - "Search memory for related code snippets"
-- "Summarize recent session activities"
 
 ## Note
-This plugin requires Claude Code due to its dependence on session lifecycle integration and local data storage.
+This plugin requires local storage and code execution capabilities, so it only works in Claude Code environments.

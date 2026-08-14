@@ -1,22 +1,22 @@
-# Harness Mem Session Log Analyzer
+# Harness Memory Session Summarizer
 
 ## Description
-A command-line tool that analyzes AI agent session logs to generate concise, human-readable summaries. Integrates with Claude Code's session lifecycle to automatically capture and brief users on session activities upon return.
+A command-line tool that analyzes AI agent session logs and generates human-readable summaries. Integrates with Claude Code's session lifecycle hooks to automatically capture session details and provide briefings upon return.
 
 ## Platforms
-- Claude Desktop: Not Supported
-- Claude Code: Supported (requires CLI access and session lifecycle hooks)
+- Claude Desktop: Not Supported (requires CLI and session log access)
+- Claude Code: Supported
 
 ## Instructions
-1. Install and configure the Harness Mem tool within Claude Code.
-2. Allow it to hook into session lifecycle events to capture logs.
-3. Upon returning to a session, request a summary of previous activities.
-4. Review the generated briefings to quickly get up to speed.
+1. Install the Harness Memory CLI tool alongside Claude Code.
+2. Enable session lifecycle hooks to capture logs automatically.
+3. Run the summarizer to produce readable session briefs.
+4. Review summaries to quickly recall previous session activities.
 
 ## Example Usage
-- "Summarize last session's key points"
-- "Generate briefing for recent interactions"
-- "Provide overview of agent decisions"
+- "Summarize last coding session"
+- "Show me a briefing of recent AI interactions"
+- "Generate session log report"
 
 ## Note
-This tool is designed exclusively for Claude Code environments due to its reliance on CLI integration and session lifecycle hooks.
+Requires access to session logs and command-line execution, limiting use to Claude Code.

@@ -1,22 +1,22 @@
-# C# .NET Architecture Advisor
+# C# .NET Architecture Specialist
 
 ## Description
-Expert assistance on C# and .NET 8/9 development, covering LINQ, Entity Framework Core, Dependency Injection, Minimal APIs, Blazor, and Clean Architecture principles. Ideal for designing and implementing modern .NET applications.
+Expert guidance on C# and .NET 8/9 development, including LINQ, Entity Framework Core, Dependency Injection, Minimal APIs, Blazor, and Clean Architecture design patterns.
 
 ## Platforms
 - Claude Desktop: Supported
 - Claude Code: Supported
 
 ## Instructions
-1. Request guidance on C# language features or .NET architectural patterns.
-2. Ask for examples using LINQ, EF Core, or Dependency Injection.
-3. Seek advice on building Minimal APIs or Blazor applications.
-4. Receive best practices for Clean Architecture and maintainable code.
+1. Provide detailed explanations of C# language features and .NET 8/9 frameworks.
+2. Assist with code examples for LINQ queries, EF Core data access, and DI setup.
+3. Explain Minimal APIs and Blazor component development.
+4. Advise on applying Clean Architecture principles in .NET projects.
 
 ## Example Usage
-- "How do I implement Dependency Injection in .NET 8?"
-- "Show a sample Blazor component"
-- "Explain Clean Architecture with C# examples"
+- "How do I implement dependency injection in .NET 8?"
+- "Show a Blazor component example"
+- "Explain Clean Architecture with C#"
 
 ## Note
-Provides conceptual and code guidance without executing or compiling code.
+Covers modern .NET versions and architectural best practices.

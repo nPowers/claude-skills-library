@@ -1,22 +1,21 @@
 # TypeScript Advanced Type System Guide
 
 ## Description
-Deep expertise in TypeScript's advanced type system including conditional types, mapped types, template literal types, discriminated unions, and type-safe API design. Useful for building robust and maintainable TypeScript codebases.
+Provides expert knowledge on advanced TypeScript types including conditional types, mapped types, template literal types, discriminated unions, and designing type-safe APIs.
 
 ## Platforms
 - Claude Desktop: Supported
 - Claude Code: Supported
 
 ## Instructions
-1. Ask about advanced TypeScript type features or patterns.
-2. Request examples demonstrating conditional or mapped types.
-3. Inquire about designing type-safe APIs or using discriminated unions.
-4. Receive detailed explanations and code samples.
+1. Explain advanced TypeScript type features with clear examples.
+2. Assist in designing complex type-safe APIs using discriminated unions and mapped types.
+3. Provide guidance on template literal types and conditional type usage.
 
 ## Example Usage
-- "Explain how conditional types work in TypeScript"
+- "Explain conditional types in TypeScript"
+- "How do I create a discriminated union?"
 - "Show an example of a mapped type"
-- "How to design a type-safe REST API client in TypeScript?"
 
 ## Note
-Focuses on conceptual understanding and code examples without runtime execution.
+Focuses on leveraging TypeScript's type system for robust code.

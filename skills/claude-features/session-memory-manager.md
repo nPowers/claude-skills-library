@@ -1,22 +1,23 @@
 # Session Memory Manager
 
 ## Description
-Persist and recall important context across Claude Code sessions using structured memory files. Enables tracking of entities, logging decisions, and summarizing context to maintain continuity.
+Manage and preserve important context across Claude Code sessions by using structured memory files. This skill supports tracking entities, logging decisions, and summarizing context to maintain continuity over time.
 
 ## Platforms
 - Claude Desktop: Supported
 - Claude Code: Supported
 
 ## Instructions
-1. Define key entities and context elements to track during sessions.
-2. Save relevant information into structured memory files.
-3. Retrieve and update memory files to recall past context.
-4. Use summaries to maintain coherent session continuity.
+1. Identify key entities and context elements during the session.
+2. Store relevant information in structured memory files.
+3. Log decisions and important events as they occur.
+4. Summarize session context periodically to maintain a concise overview.
+5. Retrieve and recall stored context in subsequent sessions to ensure continuity.
 
 ## Example Usage
-- "Remember the project details from our last session."
-- "Log this decision for future reference."
-- "Summarize the key points from previous interactions."
+- "Remember this project's key details for future sessions."
+- "Log the decisions made about the design approach."
+- "Summarize the current session context for later recall."
 
 ## Note
-Memory files must be managed carefully to ensure accurate context persistence.
+This skill requires managing structured memory files and is designed to maintain session continuity by persisting context across interactions.
