@@ -1,25 +1,23 @@
 # Citadel Agent Orchestration Framework
 
 ## Description
-Citadel is a comprehensive agent orchestration system designed for Claude Code. It supports four-tier routing, campaign persistence across sessions, parallel agents running in isolated worktrees, discovery relay between waves, lifecycle hooks, and circuit breaker functionality. It includes six production-quality skills and scales from solo developers to institutional use.
+Citadel is a comprehensive agent orchestration framework designed for Claude Code. It supports four-tier routing, campaign persistence across sessions, parallel agent execution in isolated worktrees, discovery relay between waves, lifecycle hooks, and circuit breaker functionality. Includes six production-ready skills to scale from solo developers to institutional use.
 
 ## Platforms
-- Claude Desktop: Not Supported (requires code execution and agent orchestration features)
-- Claude Code: Supported
+- Claude Desktop: Not Supported (requires code execution environment)
+- Claude Code: Supported (built specifically for Claude Code agent orchestration)
 
 ## Instructions
-1. Activate Citadel within Claude Code environment.
-2. Use the /do routing system to direct tasks across multiple agents.
-3. Utilize campaign persistence to maintain state across sessions.
-4. Manage parallel agents in isolated worktrees for concurrent workflows.
-5. Leverage discovery relay to coordinate between agent waves.
-6. Implement lifecycle hooks and circuit breakers to control agent behavior.
-7. Access the included production-quality skills to accelerate development.
+1. Use Citadel to manage multiple agents with complex routing and persistence.
+2. Leverage lifecycle hooks to customize agent behaviors throughout their execution.
+3. Utilize isolated worktrees to run parallel agents without interference.
+4. Employ the circuit breaker to handle failure scenarios gracefully.
+5. Integrate the included production-quality skills to accelerate development.
 
 ## Example Usage
-- "Start a multi-agent campaign with Citadel"
+- "Activate Citadel orchestration for multi-agent workflows"
 - "Route tasks using Citadel's four-tier system"
-- "Persist campaign state across sessions"
+- "Persist campaign state across sessions with Citadel"
 
 ## Note
-Citadel requires Claude Code due to its need for code execution and advanced agent orchestration capabilities. It is not available on Claude Desktop.
+Citadel requires Claude Code environment due to its reliance on code execution and agent lifecycle management. Not compatible with Claude Desktop alone.

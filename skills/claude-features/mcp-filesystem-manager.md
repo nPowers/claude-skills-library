@@ -1,23 +1,22 @@
-# MCP Filesystem Manager
+# Local Filesystem Manager via MCP
 
 ## Description
-Enables management of local files and directories through Claude Desktop by interfacing with the MCP filesystem server. Supports operations like file search, bulk renaming, content extraction, and organizing directories.
+Manage local files and directories through Claude Desktop by leveraging the MCP filesystem server. Supports file searching, bulk renaming, content extraction, and organizing directories efficiently.
 
 ## Platforms
-- Claude Desktop: Supported (requires MCP filesystem server installed)
-- Claude Code: Not Supported
+- Claude Desktop: Supported (requires MCP filesystem server)
+- Claude Code: Not Supported (desktop filesystem access only)
 
 ## Instructions
-1. Ensure the MCP filesystem server is installed and running.
-2. Connect Claude Desktop to the MCP server.
-3. Issue commands to search, rename, or organize files and folders.
-4. Extract content from files as needed.
-5. Perform bulk operations efficiently through Claude's interface.
+1. Connect Claude Desktop to the MCP filesystem server.
+2. Specify file or directory operations such as search, rename, or organize.
+3. Request content extraction or metadata retrieval from files.
+4. Execute batch operations for bulk file management.
 
 ## Example Usage
-- "Search files by name or content"
-- "Bulk rename files in a directory"
-- "Organize folders and extract file contents"
+- "Search for all .txt files modified last week."
+- "Rename all images in this folder with a date prefix."
+- "Extract text content from these documents."
 
 ## Note
-This skill requires the MCP filesystem server and works only on Claude Desktop.
+Requires MCP server installation for filesystem access and is limited to Claude Desktop.

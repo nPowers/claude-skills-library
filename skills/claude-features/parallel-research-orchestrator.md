@@ -1,23 +1,22 @@
-# Parallel Research Orchestrator
+# Parallel Research Sub-Agent Orchestrator
 
 ## Description
-Coordinate multiple research sub-agents to investigate different facets of a topic simultaneously. After parallel exploration, synthesize their findings into a comprehensive, unified report for efficient and thorough analysis.
+Coordinate multiple research sub-agents running in parallel to explore different facets of a topic simultaneously. Afterwards, synthesize their findings into a comprehensive unified report.
 
 ## Platforms
-- Claude Desktop: Not Supported (requires sub-agent orchestration)
+- Claude Desktop: Not Supported (requires sub-agent orchestration capabilities)
 - Claude Code: Supported
 
 ## Instructions
-1. Upon activation, divide the main research topic into distinct subtopics.
-2. Spawn multiple sub-agents to research each subtopic concurrently.
-3. Collect and aggregate the findings from all sub-agents.
-4. Synthesize the aggregated information into a cohesive summary report.
-5. Present the unified report to the user for review.
+1. Define the main research topic and identify subtopics for parallel investigation.
+2. Spawn multiple sub-agents, each assigned a specific subtopic.
+3. Collect and monitor findings from each sub-agent.
+4. Aggregate and synthesize all results into a cohesive summary report.
 
 ## Example Usage
-- "Start parallel research on climate change impacts"
-- "Run multiple sub-agents to analyze market trends"
-- "Combine research findings into one report"
+- "Investigate market trends, competitor analysis, and customer feedback in parallel."
+- "Run multiple agents to research different scientific papers simultaneously."
+- "Combine the findings into a single detailed report."
 
 ## Note
-This skill requires the ability to spawn and manage multiple sub-agents simultaneously and is therefore limited to Claude Code.
+This skill requires Claude Code due to its need for managing multiple concurrent sub-agents.

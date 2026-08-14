@@ -1,23 +1,22 @@
-# LLM Memory Persistent System
+# LLM Persistent Memory System
 
 ## Description
-A persistent memory system for Claude Code featuring an MCP server with SQLite backend, session lifecycle hooks, and a web dashboard for managing memory data and context.
+A persistent memory solution for Claude Code featuring an MCP server backed by SQLite, lifecycle hooks, and a web dashboard. Use it to store and manage long-term memory across sessions.
 
 ## Platforms
-- Claude Desktop: Supported (requires MCP server installation)
-- Claude Code: Supported (integrates with session lifecycle and local database)
+- Claude Desktop: Not Supported
+- Claude Code: Supported (requires server and database access)
 
 ## Instructions
-1. Deploy the MCP server with SQLite support in your environment.
-2. Connect Claude Code to the MCP server to enable persistent memory.
-3. Use session lifecycle hooks to capture and store context automatically.
-4. Access the web dashboard to view and manage stored memory data.
-5. Utilize persistent memory to maintain context across multiple sessions.
+1. Deploy the MCP server with SQLite backend.
+2. Configure lifecycle hooks to interact with the memory system.
+3. Use the web dashboard to monitor and manage stored memory.
+4. Integrate the system with Claude Code to persist session data.
 
 ## Example Usage
-- "Connect to LLM Memory server"
-- "Store session context persistently"
-- "View memory data on dashboard"
+- "Enable persistent memory with SQLite backend."
+- "Show me the memory dashboard."
+- "Store session data persistently using LLM Memory."
 
 ## Note
-Requires MCP server setup for Claude Desktop compatibility. Persistent storage depends on local SQLite database.
+This skill requires backend server setup and database access, limiting it to Claude Code.

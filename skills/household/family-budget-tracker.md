@@ -1,23 +1,23 @@
-# Household Budget Tracker and Advisor
+# Family Budget Tracker
 
 ## Description
-Analyze household income and expenses to identify savings opportunities. This skill helps create monthly budgets and offers actionable advice to reduce spending without compromising quality of life.
+Analyzes household income and expenses to identify savings opportunities, create monthly budgets, and offer actionable tips to reduce spending without compromising lifestyle quality.
 
 ## Platforms
 - Claude Desktop: Not Supported
-- Claude Code: Supported (requires code execution for financial calculations and analysis)
+- Claude Code: Supported (requires code for financial calculations and tracking)
 
 ## Instructions
 1. Collect detailed income and expense data.
-2. Analyze spending patterns to identify areas for savings.
-3. Create a monthly budget tailored to household goals.
-4. Provide practical tips to reduce costs while maintaining lifestyle quality.
-5. Update and adjust budgets as new data is provided.
+2. Analyze spending patterns and identify potential savings.
+3. Develop a monthly budget tailored to family needs.
+4. Provide practical advice to optimize spending.
+5. Update budget and recommendations as new data arrives.
 
 ## Example Usage
-- "Analyze our monthly expenses and suggest savings."
-- "Create a budget plan for the next month."
-- "Give me tips to cut costs without lowering our living standards."
+- "Help me analyze our monthly expenses and suggest savings."
+- "Create a family budget based on our income and bills."
+- "Give me tips to reduce spending without lowering quality of life."
 
 ## Note
-This skill requires Claude Code due to its need for data processing and financial modeling.
+This skill depends on code execution for financial analysis and budgeting.

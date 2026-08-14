@@ -1,24 +1,22 @@
 # Pre-Tool Use Validation Hook
 
 ## Description
-Intercepts all tool invocation requests before execution to validate inputs, enforce safety policies, log usage, and prevent harmful operations. Utilizes Claude Code's lifecycle hooks to ensure safe and compliant tool usage.
+Intercepts all tool invocation calls before execution to validate inputs, enforce safety policies, log actions, and block potentially destructive operations. Built using Claude Code's lifecycle hooks.
 
 ## Platforms
 - Claude Desktop: Not Supported
-- Claude Code: Supported (requires lifecycle hooks available only in Claude Code)
+- Claude Code: Supported (requires hook interception and validation logic)
 
 ## Instructions
-1. Enable the pre-tool use hook in Claude Code.
-2. On each tool call, intercept the input parameters.
-3. Validate inputs against safety and policy rules.
-4. Log the intended tool action for auditing.
-5. Block or modify tool calls that violate safety constraints.
-6. Allow safe tool calls to proceed.
+1. Install the pre-tool use hook in your Claude Code environment.
+2. Define validation rules and safety policies for tool inputs.
+3. Intercept tool calls and apply validation before execution.
+4. Log all intercepted calls and block unsafe operations.
 
 ## Example Usage
-- "Validate tool inputs before execution"
-- "Enforce safety policies on tool use"
-- "Intercept and log tool calls pre-execution"
+- "Validate tool inputs before execution."
+- "Prevent destructive tool actions automatically."
+- "Log all tool use attempts for review."
 
 ## Note
-This skill is exclusive to Claude Code due to its reliance on lifecycle hooks for tool interception.
+This skill depends on lifecycle hooks and code interception, so it is only supported in Claude Code.

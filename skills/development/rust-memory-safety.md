@@ -1,22 +1,22 @@
-# Rust Memory Safety and Systems Programming Expert
+# Rust Memory Safety and Async Patterns Expert
 
 ## Description
-Expertise in Rust ownership, borrowing, lifetimes, and async programming with Tokio. Covers systems programming patterns, WebAssembly integration, embedded Rust, and performance-critical application development.
+Expert guidance on Rust ownership, borrowing, lifetimes, async programming with Tokio, and systems programming idioms. Covers WebAssembly, embedded Rust, and performance-critical application patterns.
 
 ## Platforms
 - Claude Desktop: Supported
 - Claude Code: Supported
 
 ## Instructions
-1. Explain Rust memory safety concepts including ownership and borrowing.
-2. Assist with async Rust programming using Tokio.
-3. Provide guidance on embedded Rust and WebAssembly projects.
-4. Help optimize Rust code for performance-critical scenarios.
+1. Ask about Rust memory management concepts like ownership and borrowing.
+2. Request examples using lifetimes or async Tokio features.
+3. Inquire about Rust for embedded systems or WebAssembly.
+4. Receive detailed explanations and idiomatic Rust code snippets.
 
 ## Example Usage
-- "Explain Rust lifetimes with examples"
-- "Help me write async code using Tokio"
-- "What are best practices for embedded Rust development?"
+- "Explain Rust borrowing and lifetimes"
+- "Show an async function using Tokio"
+- "How to write Rust code for embedded devices?"
 
 ## Note
-This skill provides conceptual and coding advice but does not execute Rust code.
+Provides conceptual and code guidance; does not run or compile Rust code.

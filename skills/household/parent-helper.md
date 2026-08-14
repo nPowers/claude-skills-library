@@ -1,23 +1,23 @@
 # Family Coordination Assistant
 
 ## Description
-This Claude Code skill transforms Claude into a central hub for managing family logistics. It supports weekly briefings, meal planning, and optimizing grocery shopping across multiple stores to streamline household coordination.
+Transforms Claude into a family management hub to coordinate weekly briefings, meal planning, and multi-store grocery shopping optimization. Ideal for busy households seeking streamlined organization.
 
 ## Platforms
 - Claude Desktop: Not Supported
-- Claude Code: Supported (requires code execution for data management and optimization)
+- Claude Code: Supported (requires code execution for scheduling and optimization tasks)
 
 ## Instructions
-1. Gather family schedule and preferences.
+1. Gather family schedules and preferences.
 2. Generate weekly briefings summarizing key events and tasks.
-3. Create meal plans tailored to family needs.
+3. Plan meals for the week considering dietary needs.
 4. Optimize grocery shopping lists across multiple stores for cost and convenience.
 5. Provide reminders and updates as needed.
 
 ## Example Usage
-- "Help me coordinate this week’s family schedule and meals."
-- "Generate a multi-store grocery list optimized for our meal plan."
-- "Give me a weekly briefing for our household tasks."
+- "Help me organize this week's family schedule and meals."
+- "Create a grocery list optimized for multiple stores."
+- "Give me a briefing for our family's upcoming week."
 
 ## Note
-This skill requires Claude Code due to its need for data processing and integration with external resources.
+This skill requires code execution capabilities and cannot run on Claude Desktop alone.

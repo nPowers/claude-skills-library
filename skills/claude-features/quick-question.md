@@ -1,24 +1,22 @@
-# Quick Question Game-Dev Control Plane
+# Quick Question Game-Dev Agent Controller
 
 ## Description
-Quick Question is a control plane for game development agents that closes the loop with verified compile, testing, and cross-model review across Unity, Godot, Unreal, and S&box. It features lifecycle-aware /qq:go routing and 26 /qq:* slash commands. Designed primarily for Claude Code, it supports agent-agnostic operation via HTTP and MCP.
+Manage and coordinate game development agents across Unity, Godot, Unreal, and S&box. Provides lifecycle-aware routing, verified compile and test cycles, and cross-model review using HTTP and MCP protocols. Designed primarily for Claude Code with extensive slash command support.
 
 ## Platforms
-- Claude Desktop: Not Supported (requires lifecycle routing and agent orchestration features)
-- Claude Code: Supported
+- Claude Desktop: Not Supported
+- Claude Code: Supported (requires HTTP and MCP integration for agent coordination)
 
 ## Instructions
-1. Activate Quick Question within Claude Code.
-2. Use /qq:go routing to manage lifecycle-aware task flows.
-3. Employ the 26 /qq:* slash commands for various game-dev operations.
-4. Integrate with Unity, Godot, Unreal, and S&box pipelines.
-5. Utilize HTTP and MCP protocols for agent-agnostic communication.
-6. Verify compile and test results to close the development loop.
+1. Activate the skill in Claude Code environment.
+2. Use lifecycle-aware routing commands to initiate compile, test, and review cycles.
+3. Employ slash commands prefixed with /qq: to interact with agents.
+4. Monitor agent responses and close the loop with verified outputs.
 
 ## Example Usage
-- "/qq:go start compile and test cycle"
-- "/qq:review cross-model game assets"
-- "/qq:deploy to Unreal environment"
+- "/qq:go compile the latest build"
+- "/qq:test run unit tests on Godot project"
+- "/qq:review cross-check Unreal asset integration"
 
 ## Note
-Quick Question requires Claude Code due to its reliance on lifecycle routing and multi-agent orchestration. It is not supported on Claude Desktop.
+This skill requires Claude Code due to its reliance on agent orchestration via HTTP and MCP protocols and is not available on Claude Desktop.
