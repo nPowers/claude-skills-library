@@ -35,16 +35,18 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from email.mime.base import MIMEBase
 from email import encoders
+from urllib.parse import urlparse
 from openai import OpenAI
 
 # ─────────────────────────────────────────────────────────────────────────────
 # CONFIGURATION
 # ─────────────────────────────────────────────────────────────────────────────
 
-BASE_DIR = Path("/home/ubuntu/claude-skills-research")
+BASE_DIR = Path(__file__).resolve().parent
 OUTPUT_DIR = BASE_DIR / "output"
 DB_PATH = BASE_DIR / "seen_skills.db"
 TRACK_DEFS_PATH = BASE_DIR / "track_definitions.py"
+LIBRARY_DIR = Path(os.environ.get("CLAUDE_SKILLS_LIBRARY_DIR", "/home/ubuntu/claude-skills-library"))
 
 EMAIL_TO = "anadventuringnerd@gmail.com"
 EMAIL_FROM = os.environ.get("EMAIL_FROM", "")
@@ -64,7 +66,7 @@ if GITHUB_TOKEN:
 ITEMS_PER_TRACK = 20
 
 # LLM model — use the cheapest capable model
-LLM_MODEL = "gpt-4.1-mini"
+LLM_MODEL = "gpt-5-mini"
 
 # Batch size for LLM rewrites (5 skills per API call = major credit savings)
 REWRITE_BATCH_SIZE = 5
@@ -108,6 +110,82 @@ def mark_seen(conn, skill_key: str, track: str, name: str, source_url: str, week
         conn.commit()
     except sqlite3.IntegrityError:
         pass  # Already seen, skip silently
+
+
+TRACK_KEYS_BY_LABEL = {
+    "Professional / Domain-Specific": "professional",
+    "Software Development by Language": "development",
+    "Everyday Household / Busy Family": "household",
+    "New Claude Features & Hooks": "claude_features",
+}
+
+
+def skill_key_from_source(name: str, source_url: str) -> str:
+    """Build the same stable deduplication key used during discovery."""
+    if not source_url or source_url.startswith("seed://"):
+        return f"seed::{name}"
+
+    parsed = urlparse(source_url)
+    host = parsed.netloc.lower()
+    path_parts = [part for part in parsed.path.split("/") if part]
+
+    if host.endswith("github.com") and len(path_parts) >= 2:
+        return f"github::{path_parts[0]}/{path_parts[1]}"
+    if host.endswith("smithery.ai"):
+        skill_path = parsed.path.partition("/skills/")[2].strip("/")
+        return f"smithery::{skill_path or name}"
+    return f"source::{source_url}"
+
+
+def backfill_seen_skills(conn) -> int:
+    """Restore deduplication state from already-published weekly spreadsheets."""
+    spreadsheet_dir = LIBRARY_DIR / "spreadsheets"
+    if not spreadsheet_dir.exists():
+        return 0
+
+    cursor = conn.cursor()
+    restored = 0
+    for workbook_path in sorted(spreadsheet_dir.glob("Claude_Skills_Week_*.xlsx")):
+        try:
+            workbook = openpyxl.load_workbook(workbook_path, read_only=True, data_only=True)
+            worksheet = workbook.active
+            headers = [cell.value for cell in next(worksheet.iter_rows(max_row=1))]
+            header_indexes = {header: index for index, header in enumerate(headers) if header}
+            required = {"Track", "Name", "Source URL"}
+            if not required.issubset(header_indexes):
+                workbook.close()
+                continue
+
+            week_label = workbook_path.stem.removeprefix("Claude_Skills_Week_")
+            for row in worksheet.iter_rows(min_row=2, values_only=True):
+                name = row[header_indexes["Name"]]
+                if not name:
+                    continue
+                source_url = row[header_indexes["Source URL"]] or ""
+                track_label = row[header_indexes["Track"]] or ""
+                skill_key = skill_key_from_source(str(name), str(source_url))
+                cursor.execute(
+                    """
+                    INSERT OR IGNORE INTO seen_skills
+                    (skill_key, track, name, source_url, processed_date, week_label)
+                    VALUES (?, ?, ?, ?, ?, ?)
+                    """,
+                    (
+                        skill_key,
+                        TRACK_KEYS_BY_LABEL.get(track_label, "unknown"),
+                        str(name),
+                        str(source_url),
+                        datetime.date.today().isoformat(),
+                        week_label,
+                    ),
+                )
+                restored += cursor.rowcount
+            workbook.close()
+        except Exception as e:
+            print(f"  [WARN] Could not restore deduplication state from {workbook_path.name}: {e}")
+
+    conn.commit()
+    return restored
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -285,7 +363,7 @@ Return ONLY a valid JSON array, no other text."""
                     {"role": "user", "content": user_prompt},
                 ],
                 temperature=0.3,
-                max_tokens=4000,
+                max_completion_tokens=8000,
             )
             content = response.choices[0].message.content.strip()
             # Strip markdown code fences if present
@@ -308,6 +386,7 @@ Return ONLY a valid JSON array, no other text."""
                         "source_url": original.get("url", ""),
                         "stars": original.get("stars", 0),
                         "updated_at": original.get("updated_at", ""),
+                        "skill_key": original.get("skill_key", ""),
                     })
         except Exception as e:
             print(f"  [ERROR] LLM rewrite failed for batch {i}: {e}")
@@ -323,6 +402,7 @@ Return ONLY a valid JSON array, no other text."""
                     "source_url": s.get("url", ""),
                     "stars": s.get("stars", 0),
                     "updated_at": s.get("updated_at", ""),
+                    "skill_key": s.get("skill_key", ""),
                 })
         time.sleep(1)  # Rate limiting
 
@@ -494,6 +574,9 @@ def run_pipeline(dry_run: bool = False, track_filter: str = None):
     print(f"{'='*60}\n")
 
     conn = init_db()
+    restored_count = backfill_seen_skills(conn)
+    if restored_count:
+        print(f"  Restored {restored_count} historical skill records for deduplication.")
     all_skills_this_week = []
     summary = {}
 
@@ -512,9 +595,13 @@ def run_pipeline(dry_run: bool = False, track_filter: str = None):
         for seed in track.get("seed_skills", []):
             skill_key = f"seed::{seed['name']}"
             if not is_seen(conn, skill_key):
-                seed["url"] = seed.get("url", f"seed://{seed['name']}")
-                seed["source"] = "seed"
-                raw_candidates.append(seed)
+                candidate = {
+                    **seed,
+                    "url": seed.get("url", f"seed://{seed['name']}"),
+                    "source": "seed",
+                    "skill_key": skill_key,
+                }
+                raw_candidates.append(candidate)
 
         # Then: search GitHub
         for query in track.get("github_queries", [])[:3]:  # Limit to 3 queries/track
@@ -523,6 +610,7 @@ def run_pipeline(dry_run: bool = False, track_filter: str = None):
                 skill_key = f"github::{r['full_name']}"
                 if not is_seen(conn, skill_key) and r not in raw_candidates:
                     r["source"] = "github"
+                    r["skill_key"] = skill_key
                     raw_candidates.append(r)
             time.sleep(0.5)  # Respect rate limits
 
@@ -533,6 +621,7 @@ def run_pipeline(dry_run: bool = False, track_filter: str = None):
                 skill_key = f"smithery::{r['full_name']}"
                 if not is_seen(conn, skill_key) and r not in raw_candidates:
                     r["source"] = "smithery"
+                    r["skill_key"] = skill_key
                     raw_candidates.append(r)
             time.sleep(0.5)
 
@@ -570,8 +659,9 @@ def run_pipeline(dry_run: bool = False, track_filter: str = None):
             all_skills_this_week.append(skill)
 
             # Mark as seen in DB
-            source_type = "github" if "github.com" in skill.get("source_url", "") else "smithery"
-            skill_key = f"{source_type}::{skill['name']}"
+            skill_key = skill.get("skill_key") or skill_key_from_source(
+                skill["name"], skill.get("source_url", "")
+            )
             mark_seen(conn, skill_key, track_key, skill["name"],
                       skill.get("source_url", ""), week_label)
 

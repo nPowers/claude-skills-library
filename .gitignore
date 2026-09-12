@@ -1,5 +1,6 @@
 # Pipeline tracking database — stays local, never committed
 weekly-pipeline/seen_skills.db
+weekly-pipeline/output/
 
 # Python
 __pycache__/
