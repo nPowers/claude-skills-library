@@ -257,23 +257,32 @@ def search_smithery(query: str, max_results: int = 20) -> list[dict]:
             from bs4 import BeautifulSoup
             soup = BeautifulSoup(resp.text, "html.parser")
             results = []
+            seen_skill_paths = set()
             # Smithery skill cards typically have an <a> with the skill path
             for link in soup.find_all("a", href=True):
                 href = link["href"]
-                if href.startswith("/skills/") and href.count("/") == 2:
-                    skill_path = href[8:]  # Remove /skills/
-                    text = link.get_text(separator=" ", strip=True)[:500]
-                    results.append({
-                        "name": skill_path.replace("/", "--"),
-                        "full_name": skill_path,
-                        "description": text,
-                        "url": f"https://smithery.ai{href}",
-                        "stars": 0,
-                        "updated_at": datetime.date.today().isoformat(),
-                        "source": "smithery",
-                    })
-                    if len(results) >= max_results:
-                        break
+                path_parts = urlparse(href).path.strip("/").split("/")
+                # Current Smithery paths are /skills/<owner>/<skill-name>.
+                if len(path_parts) != 3 or path_parts[0] != "skills":
+                    continue
+
+                skill_path = "/".join(path_parts[1:])
+                if skill_path in seen_skill_paths:
+                    continue
+                seen_skill_paths.add(skill_path)
+
+                text = link.get_text(separator=" ", strip=True)[:500]
+                results.append({
+                    "name": skill_path.replace("/", "--"),
+                    "full_name": skill_path,
+                    "description": text,
+                    "url": f"https://smithery.ai/skills/{skill_path}",
+                    "stars": 0,
+                    "updated_at": datetime.date.today().isoformat(),
+                    "source": "smithery",
+                })
+                if len(results) >= max_results:
+                    break
             return results
     except Exception as e:
         print(f"  [WARN] Smithery search failed for '{query}': {e}")
